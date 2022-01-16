@@ -124,5 +124,28 @@
         "pages": [
             "whiskey"
         ]
+    },
+    {
+        "id": "mai-tai",
+        "name": "Mai Tai",
+        "recipe": [
+            "1 oz Jamaican rum",
+            "1 oz Haitian rhum",
+            ".75 oz orange curacao",
+            ".75 oz lime juice",
+            ".5 oz orgeat"
+        ],
+        "build": [
+            "Combine all ingredients in a shaker with ice and shake",
+            "double strain into a glass with pebble or crushed ice",
+            "garnish with sprig of mint",
+            "optional, float some dark rum on top",
+            "extra optional, take lime half that was squeezed, float on top of drink, fill with 151 and light that bitch"
+        ],
+        "image": null,
+        "thumbnail": null,
+        "pages": [
+            "rum"
+        ]
     }
 ]
