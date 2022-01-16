@@ -6,6 +6,10 @@
     background: #818181;
 }
 
+.recipe-card{
+    border: #818181 solid 5px;
+}
+
 .img-card{
     align-items: center;
 }
