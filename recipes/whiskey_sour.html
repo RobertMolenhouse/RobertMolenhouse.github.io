@@ -72,9 +72,19 @@
 
     $.getJSON('../content/json/recipes.json' , (obj) => {
         recipeData = obj.find( ({ id }) => id === 'whiskey-sour' );
+
+       let rl = $('#recipe-list');
+
+       recipeData['recipe'].forEach(element => {
+
+    var li = document.createElement('li');
+    li.appendChild(document.createTextNode(element));
+    rl.appendChild(li);
+
+       });
     });
 
-    console.log(recipeData);
+    
 </script>
 
 </html>
