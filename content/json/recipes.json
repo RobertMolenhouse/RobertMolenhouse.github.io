@@ -1,0 +1,19 @@
+[
+    {
+        "id" : "whiskey-sour",
+        "name" : "Whiskey Sour",
+        "recipe" : [
+            "2 oz rye whiskey",
+            "3/4 oz lemon juice",
+            "1/2 oz rich demerara syrup"
+        ],
+        "build" : [
+            "put all ingredients in shaker and dry shake",
+            "add ice and shake again",
+            "double strain into chilled glass",
+            "wait 30 sec for drink to settle",
+            "place drops of angostura bitters on the foamy top",
+            "run garnish pick through bitters drops to make hearts"
+        ]
+    }
+]
