@@ -14,11 +14,11 @@
                 <h1 class="card-title text-center">Whiskey</h1>
             </div>
             
-            <div class="row">
-                <div class="card col-sm-2 recipe-card">
+            <div id="recipes" class="row">
+                <!-- <div class="card col-sm-2 recipe-card">
                     <img src="../content/img/whiskey_sour.jpg" class="img-thumbnail"/>
                     <h5 class="text-center">Whiskey Sour</h5>
-                    <a href="../recipes/whiskey_sour.html" class="stretched-link"></a>
+                    <a href="../recipes/recipe.html?id=whiskey-sour" class="stretched-link"></a>
                 </div>
                 <div class="card col-sm-2 recipe-card">
                     <img src="../content/img/No_Thumbnail.png" class="img-thumbnail"/>
@@ -44,8 +44,27 @@
                     <img src="../content/img/No_Thumbnail.png" class="img-thumbnail"/>
                     <h5 class="text-center"></h5>
                     <a href="../recipes/" class="stretched-link"></a>
-                </div>
+                </div> -->
+
+
             </div>
         </div>
     </body>
+
+    <script>
+        $.getJSON('../content/json/recipes.json' , (obj) => {
+            const pageItems = obj.filter(recipe => recipe['pages'].includes('whiskey'));
+
+            pageItems.forEach(element => {
+
+                const html = $(`<div class="card col-sm-2 recipe-card">
+                                    <img src="../content/img/${element['image'] ? element['image'] : 'No_Thumbnail.png'}" class="img-thumbnail"/>
+                                    <h5 class="text-center">${element['name']}</h5>
+                                    <a href="../recipes/recipe.html?id=${element['id']}" class="stretched-link"></a>
+                                </div>`);
+
+                document.getElementById('recipes').appendChild(html);
+            });
+        });
+    </script>
 </html>

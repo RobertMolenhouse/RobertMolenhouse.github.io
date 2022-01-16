@@ -16,6 +16,30 @@
             "run garnish pick through bitters drops to make hearts"
         ],
         "image" : "whiskey_sour.jpg",
-        "thumbnail" : null
+        "thumbnail" : null,
+        "pages" : [
+            "whiskey"
+        ]
+    },
+    {
+        "id" : "saskahattan",
+        "name" : "Saskahattan",
+        "recipe" : [
+            "2 oz Rye Whiskey",
+            ".75 oz Saskatoon Berry Liqueur",
+            ".25 oz cherry syrup",
+            "3-4 dashes angostura bitters"
+        ],
+        "build" : [
+            "combine ingredients in mixing glass",
+            "add ice and stir still chilled and diluted",
+            "Strain into rocks glass with large rock, or serve up",
+            "garnish with cocktail cherry"
+        ],
+        "image" : null,
+        "thumbnail" : null,
+        "pages" : [
+            "whiskey"
+        ]
     }
 ]
