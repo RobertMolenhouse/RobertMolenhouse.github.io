@@ -1,13 +1,13 @@
 [
     {
-        "id" : "whiskey-sour",
-        "name" : "Whiskey Sour",
-        "recipe" : [
+        "id": "whiskey-sour",
+        "name": "Whiskey Sour",
+        "recipe": [
             "2 oz rye whiskey",
             "3/4 oz lemon juice",
             "1/2 oz rich demerara syrup"
         ],
-        "build" : [
+        "build": [
             "put all ingredients in shaker and dry shake",
             "add ice and shake again",
             "double strain into chilled glass",
@@ -15,30 +15,113 @@
             "place drops of angostura bitters on the foamy top",
             "run garnish pick through bitters drops to make hearts"
         ],
-        "image" : "whiskey_sour.jpg",
-        "thumbnail" : null,
-        "pages" : [
+        "image": "whiskey_sour.jpg",
+        "thumbnail": null,
+        "pages": [
             "whiskey"
         ]
     },
     {
-        "id" : "saskahattan",
-        "name" : "Saskahattan",
-        "recipe" : [
+        "id": "saskahattan",
+        "name": "Saskahattan",
+        "recipe": [
             "2 oz Rye Whiskey",
             ".75 oz Saskatoon Berry Liqueur",
             ".25 oz cherry syrup",
             "3-4 dashes angostura bitters"
         ],
-        "build" : [
+        "build": [
             "combine ingredients in mixing glass",
             "add ice and stir still chilled and diluted",
             "Strain into rocks glass with large rock, or serve up",
             "garnish with cocktail cherry"
         ],
-        "image" : null,
-        "thumbnail" : null,
-        "pages" : [
+        "image": null,
+        "thumbnail": null,
+        "pages": [
+            "whiskey"
+        ]
+    },
+    {
+        "id": "new-york",
+        "name": "New York",
+        "recipe": [
+            "2 oz Canadian Whiskey",
+            ".5 oz lemon juice",
+            ".5 oz grenadine"
+        ],
+        "build": [
+            "combine all ingredients in a shaker with ice and shake",
+            "double string into rocks glass over ice",
+            "cut orange swatch and express over the drink",
+            "garnish with the orange swath"
+        ],
+        "image": null,
+        "thumbnail": null,
+        "pages": [
+            "whiskey"
+        ]
+    },
+    {
+        "id": "obstruction-no-1",
+        "name": "Obstruction no 1",
+        "recipe": [
+            "2 oz Bourbon (Buffalo Trace)",
+            ".75 oz Walnut Liqueur",
+            "2 bar spoons maple syrup",
+            "3-4 dashes Angostura bitters"
+        ],
+        "build": [
+            "combine ingredients in mixing glass",
+            "add ice and stir till chilled and diluted",
+            "Strain into rocks glass with large rock",
+            "smoke that bad boy, if you can"
+        ],
+        "image": "obstruction.jpg",
+        "thumbnail": null,
+        "pages": [
+            "whiskey"
+        ]
+    },
+    {
+        "id": "paper-plane",
+        "name": "Paper Plane",
+        "recipe": [
+            ".75 oz Bourbon",
+            ".75 oz Amaro Nonino",
+            ".75 oz Aperol (substitute with Campari to make a Paper Airplane)",
+            ".75 oz lemon juice"
+        ],
+        "build": [
+            "Combine all ingredients in a shaker with ice and shake",
+            "double strain into a chilled coup",
+            "express lemon oil on top and wipe rim of glass",
+            "garnish with your lemon swath if you feel so inclined"
+        ],
+        "image": null,
+        "thumbnail": null,
+        "pages": [
+            "whiskey"
+        ]
+    },
+    {
+        "id": "yellow-no-5",
+        "name": "Yellow no 5",
+        "recipe": [
+            ".75 oz High Proof Bourbon",
+            ".75 oz Yellow Chartreuse",
+            ".75 oz St Germain",
+            ".75 oz lemon juice"
+        ],
+        "build": [
+            "Combine all ingredients in a shaker with ice and shake",
+            "double strain into a chilled coup",
+            "express lemon oil on top and wipe rim of glass",
+            "garnish with your lemon swath if you feel so inclined"
+        ],
+        "image": null,
+        "thumbnail": null,
+        "pages": [
             "whiskey"
         ]
     }
