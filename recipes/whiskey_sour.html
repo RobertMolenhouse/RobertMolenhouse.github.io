@@ -35,10 +35,6 @@
                         <div class="card-body">
                             <h2 class="card-title">Recipe</h2>
                             <ul id="recipe-list" class="card-text">
-                                <!-- <li>1.5 oz Whiskey</li>
-                                <li>.75 oz lemon juice</li>
-                                <li>.5 oz rich demerara syrup</li>
-                                <li>one egg white (optional)</li> -->
                             </ul>
                         </div>
                     </div>
@@ -46,20 +42,14 @@
                     <div class="card">
                         <div class="card-body">
                             <h2 class="card-title">Building Steps</h2>
-                            <ul id="building-list" class="card-text">
-                                <!-- <li>put all ingredients in shaker and dry shake</li>
-                                <li>add ice and shake again</li>
-                                <li>double strain into chilled glass</li>
-                                <li>wait 30 sec for drink to settle</li>
-                                <li>place drops of angostura bitters on the foamy top</li>
-                                <li>run garnish pick through bitters drops to make hearts</li> -->
+                            <ul id="build-list" class="card-text">
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card img-card">
-                        <img id="drink-image" class="recipe-img p-3" src="../content/img/whiskey_sour.jpg">
+                        <img id="drink-image" class="recipe-img p-3" src="">
                     </div>
                 </div>
             </div>
@@ -70,18 +60,50 @@
 <script>
     let recipeData;
 
+    // recipeData = {
+    //     "id" : "whiskey-sour",
+    //     "name" : "Whiskey Sour",
+    //     "recipe" : [
+    //         "2 oz rye whiskey",
+    //         "3/4 oz lemon juice",
+    //         "1/2 oz rich demerara syrup"
+    //     ],
+    //     "build" : [
+    //         "put all ingredients in shaker and dry shake",
+    //         "add ice and shake again",
+    //         "double strain into chilled glass",
+    //         "wait 30 sec for drink to settle",
+    //         "place drops of angostura bitters on the foamy top",
+    //         "run garnish pick through bitters drops to make hearts"
+    //     ],
+    //     "image" : "whiskey-sour.jpg",
+    //     "thumbnail" : null
+    // };
+
+    
+
+    
     $.getJSON('../content/json/recipes.json' , (obj) => {
         recipeData = obj.find( ({ id }) => id === 'whiskey-sour' );
 
-       let rl = $('#recipe-list');
+        let rl = document.getElementById('recipe-list');
 
-       recipeData['recipe'].forEach(element => {
+        recipeData['recipe'].forEach(element => {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(element));
+            rl.appendChild(li);
+        });
 
-    var li = document.createElement('li');
-    li.appendChild(document.createTextNode(element));
-    rl.appendChild(li);
+        let bl = document.getElementById('build-list');
+        recipeData['build'].forEach(element => {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(element));
+            bl.appendChild(li);
+        });
 
-       });
+        if(recipeData['image']){
+            $('#drink-image').attr("src", `../content/img/${recipeData['image']}`);
+        }
     });
 
     
