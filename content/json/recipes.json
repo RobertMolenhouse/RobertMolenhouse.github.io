@@ -147,5 +147,24 @@
         "pages": [
             "rum"
         ]
+    },
+    {
+        "id": "last-word",
+        "name": "Last Word",
+        "recipe": [
+            "3/4 oz gin",
+            "3/4 oz Green Chartruese",
+            "3/4 oz Maraschino Liqueur",
+            "3/4 oz lime juice"
+        ],
+        "build": [
+            "Combine all ingredients in a shaker with ice and shake",
+            "double strain into a chilled coup"
+        ],
+        "image": null,
+        "thumbnail": null,
+        "pages": [
+            "gin"
+        ]
     }
 ]
